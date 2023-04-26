@@ -1,0 +1,117 @@
+@font-face {
+    font-family: Pony;
+    src: url('../../assets/fonts/Pony.ttf');
+}
+
+.bookingMovie{
+    font-family: Pony;
+    background-image: url(../../assets/img/bgmovie.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: fixed;
+}
+
+.bookingMovie::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+
+.ghe{
+    border: 3px solid orange;
+    width: 50px;
+    height: 45px;
+    font-size: 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.rowNumber{
+    /* font-size: 25px; */
+    width: 35px;
+    height: 35px;
+    background: none;
+    border:none;
+    /* margin-left: 2%; */
+    margin-left: 25px;
+    margin-bottom: 1%;
+    font-size: 30px;
+    color: yellow;
+    
+}
+.firstChar{
+    color: yellow;
+    font-size: 35px;
+    text-align: center !important;
+    width: 35px;
+    display: inline-block;
+    padding-right: 10px;
+    margin: 6px 0;
+
+}
+
+.screen{
+    border-top: 50px solid rgb(255, 159, 95);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 100;
+    width:80%;
+    filter: drop-shadow(4px 30px 20px rgba(255, 255, 255, 0.5));
+    font-size: 25px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.gheDuocChon {
+    border: 3px solid orange;
+    background: orange;
+    cursor: no-drop !important;
+    border-radius: 5px;
+    width: 50px;
+    height: 45px;
+    display: inline-block;
+    /* vertical-align: middle; */
+    font-size: 15px;
+    color: #000;
+
+}
+
+.gheDangChon {
+    border: 3px solid rgb(109, 238, 109);
+    background: rgb(109, 238, 109);
+    color: #fff;
+    /* cursor: no-drop !important; */
+    border-radius: 5px;
+    width: 50px;
+    height: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #000;
+}
+
+.gheChuaChon {
+    border: 3px solid #fff;
+    background: #fff;
+    color: #fff;
+    cursor: no-drop !important;
+    border-radius: 5px;
+    width: 50px;
+    height: 45px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
