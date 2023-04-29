@@ -3,8 +3,11 @@ import './BookingTicket.css'
 import ChairInfo from './ChairInfo'
 import data from '../../data/data.json'
 import Chair from './Chair'
+import { connect } from 'react-redux'
+import { muaVeAction } from '../../redux/actions/MovieTicketAction';
 
-export default class BookingTicket extends Component {
+
+class BookingTicket extends Component {
     renderHangGhe = () => {
         return data.map((hangGhe, index) => {
             return (
@@ -34,3 +37,13 @@ export default class BookingTicket extends Component {
         )
     }
 }
+
+const mapDispatchToProps = dispatch => {
+	return {
+		muaVe: () => {
+			dispatch(muaVeAction())
+		}
+	}
+}
+
+export default connect (null,mapDispatchToProps)(BookingTicket)

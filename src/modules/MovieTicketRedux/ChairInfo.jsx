@@ -22,7 +22,7 @@ class ChairInfo extends Component {
 					<span>Số ghế đặt </span>
 
 				</div>
-				<table className='table mt-5 text-white text-center' border={2}>
+				<table className='table mt-5 text-white text-center' border={2} >
 					<thead>
 						<tr>
 							<th>Số ghế</th>
@@ -52,6 +52,7 @@ class ChairInfo extends Component {
 						</tr>
 					</tfoot>
 				</table>
+				<button onClick={()=>this.props.muaVe()} className='btn btn-success'>Mua Vé</button>
 			</div>
 		)
 	}
@@ -67,6 +68,13 @@ const mapDispatchToProps = dispatch => {
 	return {
 		huyGhe: (soGhe) => {
 			dispatch(huyGheAction(soGhe))
+		},
+
+		muaVe: () => {
+			const action = {
+				type: 'MUA_VE'
+			}
+			dispatch(action)
 		}
 	}
 }

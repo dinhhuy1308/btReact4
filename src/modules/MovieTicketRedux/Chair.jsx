@@ -41,12 +41,12 @@ class Chair extends Component {
 
 	renderHangGhe = () => {
 		if (this.props.soHangGhe === 0) {
-			return <Fragment style={{ marginLeft: '10px' }} >
+			return <div style={{ marginLeft: '10px' }} >
 				<span className='firstChar text-center'>
 					{this.props.hangGhe.hang}
 				</span>
 				{this.renderSohang()}
-			</Fragment>
+			</div>
 		} else {
 			return <Fragment>
 				<span className='firstChar text-center'>
